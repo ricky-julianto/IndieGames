@@ -1,16 +1,16 @@
+
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\GameController;
 
-Route::get('/', function () {
-    return view('page.home');
-});
+Route::get('/', [GameController::class, 'home'])->name('home');
 
-Route::get('/profile', [MahasiswaController::class, 'index']);
+Route::get('/games', [GameController::class, 'index'])->name('games.index');
 
-Route::get('/about', function () {
-    return view('page.about');
-});
+Route::get('/games/{id}', [GameController::class, 'show'])->name('games.show');
 
-Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+Route::get('/tentang', function () {
+    return view('games.about');
+})->name('games.about');
+

@@ -1,8 +1,8 @@
- <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm">
             <div class="container">
 
                 <a class="navbar-brand text-white fw-bold" href="#">
-                    UNPAM - Sistem Informasi
+                    Project Rekayasa Web
                 </a>
 
                 <button class="navbar-toggler" type="button"
@@ -23,10 +23,10 @@
                             <a href="{{ url('/profile') }}" class="nav-link text-white">
                                 Profile
                             </a>
-                        </li>
+                        </li>  
                         <li class="nav-item">
-                            <a href="{{ url('/about') }}" class="nav-link text-white">
-                                About
+                            <a href="{{ url('/project') }}" class="nav-link text-white">
+                                Project
                             </a>
                         </li>
                     </ul>

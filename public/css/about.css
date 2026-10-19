@@ -1,0 +1,255 @@
+.about-hero {
+    background: #111310;
+    color: white;
+    padding: 65px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    border-radius: 12px;
+}
+
+.about-heading {
+    max-width: 550px;
+}
+
+.about-label {
+    color: #d9e8ca;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.about-heading h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    font-weight: 800;
+    margin: 22px 0;
+}
+
+.about-heading h1 span,
+.company-title h2 span {
+    color: #b5f36a;
+}
+
+.about-heading p,
+.indie-description p,
+.feature-text p,
+.company-content p {
+    color: #aaa;
+    line-height: 1.9;
+}
+
+.about-hero-image img {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 12px;
+}
+
+.indie-section {
+    padding: 65px 9%;
+    background: #f5f5f0;
+    color: #171717;
+}
+
+.section-heading h2,
+.feature-text h2,
+.company-title h2 {
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 800;
+    margin: 18px 0;
+}
+
+.indie-description {
+    max-width: 800px;
+    margin: 25px 0 35px auto;
+}
+
+.indie-description p {
+    color: #626262;
+}
+
+.indie-highlight {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.indie-highlight div {
+    background: white;
+    padding: 25px;
+    border-radius: 9px;
+    border-bottom: 3px solid #b5f36a;
+}
+
+.indie-highlight span {
+    color: #719c36;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.indie-highlight h3 {
+    font-size: 19px;
+    margin: 14px 0 10px;
+    font-weight: 700;
+}
+
+.indie-highlight p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.about-feature {
+    background: #191b17;
+    color: white;
+    padding: 70px 9%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+.feature-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-text p {
+    font-size: 14px;
+}
+
+.company-section {
+    background: #111310;
+    color: white;
+    padding: 70px 9%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 55px;
+    border-radius: 12px;
+}
+
+.company-title h2 {
+    line-height: 1.3;
+}
+
+.company-content p {
+    font-size: 14px;
+}
+
+.about-button {
+    display: inline-block;
+    background: #b5f36a;
+    color: #111;
+    padding: 12px 22px;
+    margin-top: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #0b0d0a 0%,
+        #151a12 50%,
+        #202b17 100%
+    );
+    background-attachment: fixed;
+    color: #f5f7f2;
+}
+
+.about-hero {
+    background: linear-gradient(
+        135deg,
+        #111310 0%,
+        #171d13 60%,
+        #202b17 100%
+    );
+    border: 1px solid rgba(181, 243, 106, 0.12);
+}
+
+.indie-section {
+    background: transparent;
+    color: #f5f7f2;
+}
+
+.indie-description p {
+    color: #b9bdb5;
+}
+
+.indie-highlight div {
+    background: #171d13;
+    color: #f5f7f2;
+    border: 1px solid rgba(181, 243, 106, 0.12);
+    border-bottom: 3px solid #b5f36a;
+}
+
+.indie-highlight p {
+    color: #b9bdb5;
+}
+
+.about-feature {
+    background: linear-gradient(
+        135deg,
+        #111310,
+        #202b17
+    );
+}
+
+.company-section {
+    background: linear-gradient(
+        135deg,
+        #111310,
+        #202b17
+    );
+    border: 1px solid rgba(226, 241, 208, 0.12);
+}
+
+.about-heading p,
+.feature-text p,
+.company-content p {
+    color: #b9bdb5;
+}
+
+.about-button:hover {
+    background: white;
+    color: #111;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+    .about-hero,
+    .about-feature {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 7%;
+    }
+
+    .about-hero-image img {
+        max-width: 260px;
+    }
+
+    .indie-section,
+    .company-section {
+        padding: 45px 7%;
+    }
+
+    .indie-highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .about-feature {
+        gap: 30px;
+    }
+
+    .company-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

@@ -2,59 +2,60 @@
 
 @section('content')
 
-<div class="container flex-grow-1 d-flex align-items-center justify-content-center">
+<link rel="stylesheet" href="{{ asset('css/profile.css') }}">
+<div class="hollow-profile">
 
-    <div class="card shadow-sm border-0" style="width: 500px;">
+    <section class="hollow-hero text-center">
+        <div class="container">
 
-        <div class="card-header bg-white text-center py-4">
-
-            <h2 class="card-title mb-0">
-                Profile Mahasiswa
-            </h2>
-
-            <img src="{{ asset('foto/Foto Saya.jpeg') }}"
-                alt="Profile Image"
-                class="img-fluid rounded-circle mt-3"
-                style="width: 150px; height: 150px; object-fit: cover;">
-
+            <img src="{{ asset('images/logo hollow.png') }}"
+                 alt="Logo HOLLOW"
+                 class="hollow-logo">
+            <h2>Ekspresikan Diri Kalian dengan HOLLOW.MARCH.</h2>
         </div>
+    </section>
 
-        <div class="card-body px-4">
+<section class="hollow-about" id="tentang">
+    <div class="container">
+        <h2><strong>TENTANG HOLLOW.MARCH</strong></h2>
 
-            <ul class="list-group list-group-flush">
+        <p>HOLLOW.MARCH merupakan brand clothing yang berfokus
+        pada fashion modern dengan desain minimalis, karakter
+        kuat, dan gaya yang merepresentasikan identitas
+        penggunanya.</p>
+        
+        <p>HOLLOW.MARCH hadir sebagai wadah untuk mengekspresikan
+        diri melalui pakaian, dengan mengutamakan kreativitas,
+        kualitas, dan kenyamanan dalam setiap produk.</p>
+    
+        <p>HOLLOW.MARCH didirikan pada tahun
+        <strong>2026</strong> dengan tujuan menghadirkan
+        produk fashion yang memiliki ciri khas dan karakter
+        tersendiri.</p>
 
-                <div class="text-center">
-                    <h4 class="mb-3">
-                        Data Mahasiswa
-                    </h4>
+        <div class="company-section">
+            <h2><strong>Perusahaan</strong></h2>
+            <div class="company-list">
+                <div class="company-item">
+                    <strong>Nama Brand</strong>
+                    <p>HOLLOW.MARCH</p>
                 </div>
-
-                <li class="list-group-item text-center">
-                    <strong>Nama:</strong>
-                    {{ $mahasiswa['nama'] }}
-                </li>
-
-                <li class="list-group-item text-center">
-                    <strong>NIM:</strong>
-                    {{ $mahasiswa['nim'] }}
-                </li>
-
-                <li class="list-group-item text-center">
-                    <strong>Program Studi:</strong>
-                    {{ $mahasiswa['prodi'] }}
-                </li>
-
-                <li class="list-group-item text-center">
-                    <strong>Kampus:</strong>
-                    {{ $mahasiswa['kampus'] }}
-                </li>
-
-            </ul>
-
+                <div class="company-item">
+                    <strong>Bidang Usaha</strong>
+                    <p>Fashion dan Clothing</p>
+                </div>
+                <div class="company-item">
+                    <strong>Produk</strong>
+                    <p>Pakaian dan Apparel</p>
+                </div>
+                <div class="company-item">
+                    <strong>Tagline</strong>
+                    <p>Express Your Identity.</p>
+                </div>
+            </div>
         </div>
 
     </div>
-
+</section>    
 </div>
-
 @endsection
